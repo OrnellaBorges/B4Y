@@ -1,0 +1,481 @@
+@font-face {
+ font-family: "Oswald-Bold";
+ src: url("assets/fonts/Oswald/Oswald-Bold.ttf") format("ttf"),     
+}
+
+@font-face {
+ font-family: "Oswald-ExtraLight";
+ src: url("assets/fonts/Oswald/Oswald-ExtraLight.ttf") format("ttf"),     
+}
+
+@font-face {
+ font-family: "Oswald-Light";
+ src: url("assets/fonts/Oswald/Oswald-Light.ttf") format("ttf"),     
+}
+
+@font-face {
+ font-family: "Oswald-Medium";
+ src: url("assets/fonts/Oswald/Oswald-Medium.ttf") format("ttf"),     
+}
+
+@font-face {
+ font-family: "Oswald-Regular";
+ src: url("assets/fonts/Oswald/Oswald-Regular.ttf") format("ttf"),     
+}
+
+@font-face {
+ font-family: "Oswald-SemiBold";
+ src: url("assets/fonts/Oswald/Oswald-SemiBold.ttf") format("ttf"),     
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.App {
+  text-align: center;
+  font-family: "Oswald-Regular", Arial, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header-nav nav  {
+  text-align: left;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav nav .list1, .header-nav nav .list2 {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-nav nav .list1 img {
+  width: 20%;
+}
+
+.header-nav nav .list1 a, .header-nav nav .list2 a {
+    text-decoration: none;
+    font-family: 'Fjalla One', cursive;
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+}
+.header-nav .header-pict {
+    text-align: center;
+    padding: 180px 0 80px 0;
+    background-image: url(assets/logo/home2.jpg);
+    text-shadow: 0 2px 0 black, 0 -2px 0 black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.background_opacity {
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.header-nav .header-pict h1{
+    
+    font-size: 36px;
+    color: #FFBD2F;
+    font-family: 'Indie Flower', cursive;
+    margin: auto;
+    margin-top: -40px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 6;
+}
+
+main {
+  width: 70%;
+  margin: 25px auto;
+}
+
+.product-mosaic {
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    padding: 10px 1%;
+    vertical-align: top;
+    border: 2px solid #FFBD2F;
+    border-radius: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 25px;
+}
+
+.product-mosaic h3 {
+    color: black;
+    font-size: 22px;
+}
+
+.product-mosaic img.product-img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.product-mosaic a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-mosaic p {
+    height: 50px;
+}
+
+.product-mosaic form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-mosaic form input {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.product-mosaic .addToBasket {
+  color: #FFBD2F;
+  font-size: 1.6em;
+  margin-left: 5%;
+}
+
+.popUp {
+    border: 2px solid #FFBD2F;
+    border-radius: 20px;
+    position: fixed;
+    top: 100px;
+    left: 32%;
+    z-index: 15;
+    background-color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.popUp .closePopUp {
+    width: 15%;
+    margin: 5px 20px 0 91%;
+    cursor: pointer;
+}
+
+.popUp img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.popUp button.closePopUp {
+    width: 80%;
+    margin: auto;
+    background-color: #FFBD2F;
+    color: white;
+    text-shadow: 0 1px 0 #c4c3c2, 0 -1px 0 #c4c3c2;
+    margin-top: 10px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid #c4c3c2;
+    padding-left: 3%;
+    outline: none;
+}
+
+#home-presentation {
+    font-size: 18px;
+    font-family: "Oswald-SemiBold", cursive;
+    line-height: 2;
+    text-align: center;
+}
+
+#homerHome {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.comeBack {
+    color: #FFBD2F;
+    font-size: 28px;
+}
+
+.beerDetail {
+  text-align: center;
+}
+
+.beerDetail img {
+    width: 40%;
+}
+
+.beerDetail h3 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 32px;
+    text-shadow: 0 1px 0 black, 0 -1px 0 black;
+    color: #FFBD2F;
+    margin: 0;
+}
+
+.paymentPart {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.paymentPart {
+    display: flex;
+    justify-content: space-around;
+}
+
+.paymentPart span {
+    display: block;
+    width: 50%;
+    font-family: 'Indie Flower', cursive;
+    color: #FFBD2F;
+    font-size: 23px;
+    text-shadow: 0 1px 0 black, 0 -1px 0 black;
+}
+
+.paymentPart form {
+    width: 50%;
+}
+
+
+.basketTable {
+    border: 2px solid #FFBD2F;
+    border-radius: 12px;
+    padding: 15px 2%;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.basketTable tr {
+    border: 2px solid #FFBD2F;
+}
+
+.basketTable th {
+    padding: 0 3%;
+    width: 19%;
+    height: 40px;
+}
+
+.basketTable td {
+    padding: 0 3%;
+    width: 19%;
+    height: 40px;
+}
+
+.trash-beer {
+    border: none;
+    background-color: white;
+}
+
+.trash-beer i {
+    color: #FFBD2F;
+    font-size: 20px;
+}
+
+.popUp {
+    border: 2px solid #FFBD2F;
+    border-radius: 20px;
+    position: fixed;
+    top: 100px;
+    left: 32%;
+    z-index: 15;
+    background-color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.popUp .closePopUp {
+    width: 15%;
+    margin: 5px 20px 0 91%;
+    cursor: pointer;
+}
+
+.popUp img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.popUp button.closePopUp {
+    width: 80%;
+    margin: auto;
+    background-color: #FFBD2F;
+    color: white;
+    text-shadow: 0 1px 0 #c4c3c2, 0 -1px 0 #c4c3c2;
+    margin-top: 10px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid #c4c3c2;
+    padding-left: 3%;
+    outline: none;
+}
+.addBeer {
+    color: #FFBD2F;
+    font-family: 'Fjalla One', cursive;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.b-form {
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border: 2px solid #FFBD2F;
+    border-radius: 12px;
+    padding: 10px 2% 20px 2%;
+}
+
+.b-form input {
+    font-family: 'Fjalla One', cursive;
+    display: block;
+    width: 87%;
+    margin: auto;
+    margin-top: 10px;
+    height: 32px;
+    border-radius: 12px;
+    border: 1px solid #c4c3c2;
+    padding-left: 3%;
+    outline: none;
+}
+
+.b-form textarea {
+    font-family: 'Fjalla One', cursive;
+    display: block;
+    width: 87%;
+    margin: auto;
+    margin-top: 10px;
+    min-height: 70px;
+    border-radius: 12px;
+    border: 1px solid #c4c3c2;
+    padding-left: 3%;
+    outline: none;
+}
+
+.b-form input[type="submit"] {
+    background-color: #FFBD2F;
+    width: 35%;
+    color: white;
+    text-shadow: 0 1px 0 #c4c3c2, 0 -1px 0 #c4c3c2;
+}
+
+
+.tableBeer {
+    border: 2px solid #FFBD2F;
+    border-radius: 12px;
+    padding: 15px 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tableBeer tr {
+    border: 2px solid #FFBD2F;
+}
+.tableBeer tr td img {
+    width: 30%;
+}
+.tableBeer td {
+    padding: 10px 2%;
+}
+
+
+.FormGroup {
+  margin: 0 15px 20px;
+  padding: 0;
+  border-style: none;
+  background-color: #7795f8;
+  will-change: opacity, transform;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 #829fff;
+  border-radius: 4px;
+}
+
+.FormRow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 15px;
+  border-top: 1px solid #819efc;
+}
+
+.StripeElement--webkit-autofill {
+  background: transparent !important;
+}
+
+.StripeElement {
+  width: 100%;
+  padding: 11px 15px 11px 0;
+}
+.first {
+    margin: 2% auto;
+}
+.flexTable{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.flexTable h3 {
+    width: 100%;
+}
+.flexTable div {
+    width: 45%;
+}
+.flexTable div table {
+    width: 100%;
+}
+
+.flexTable div h4{
+    width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
